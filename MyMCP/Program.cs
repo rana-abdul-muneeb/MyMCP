@@ -16,8 +16,8 @@ var tools =builder.Services
     .WithToolsFromAssembly();
 
 var sqlTool = new SqlTool();
-await builder
-    .Build()
-    .RunAsync();
+//await builder
+//    .Build()
+//    .RunAsync();
 
-//await builder.Build().RunApplicationandPrintConsoleMessage("MCP Server has started. Refresh MCP tool in your Agent.");
+await builder.Build().RunApplicationandPrintConsoleMessage("MCP Server has started. Refresh MCP tool in your Agent.");
