@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "mcp-server-C#": {
+      "command": "dotnet",
+      "args": ["run", "--project", "C:\\Users\\rmuneeb\\source\\repos\\MyMCP\\MyMCP\\MyMCP.csproj"]
+    }
+  }
+}
