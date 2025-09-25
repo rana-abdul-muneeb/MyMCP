@@ -79,14 +79,14 @@ public class SqlTool
                     catch (InvalidOperationException)
                     {
                         // Not a SELECT query, try ExecuteNonQuery
-                        int affected = command.ExecuteNonQuery();
+                      //  int affected = command.ExecuteNonQuery();
                         stopwatch.Stop();
 
                         var response = new
                         {
                             success = true,
                             executionTimeMs = stopwatch.ElapsedMilliseconds,
-                            message = $"Non-query executed. Rows affected: {affected}"
+                            message = $"Non-query executed. Rows affected:"
                         };
 
                         return JsonSerializer.Serialize(response, new JsonSerializerOptions
